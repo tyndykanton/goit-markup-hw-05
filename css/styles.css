@@ -32,17 +32,10 @@ body {
 }
 
 img {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   width: 100%;
   height: auto;
-}
-
-a {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-svg {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button {
@@ -119,6 +112,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   padding: 32px 0px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link.current {
@@ -152,8 +146,6 @@ button {
 .btn:active {
   background-color: var(--accent-colo);
   color: var(--secondayr-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-container {
@@ -181,6 +173,7 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--description-text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact:hover svg,
@@ -191,6 +184,7 @@ button {
 
 .header-contact svg {
   fill: var(--description-text);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mailto {
@@ -200,6 +194,7 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--description-text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mailto:hover svg,
@@ -210,6 +205,7 @@ button {
 
 .header-mailto svg {
   fill: var(--description-text);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hero Section */
@@ -252,7 +248,7 @@ button {
   color: var(--secondayr-text-color);
   text-align: center;
   max-width: 696px;
-  margin-top: 30px;
+  margin: 30px 0px;
 }
 
 .hero-btn {
@@ -265,6 +261,10 @@ button {
   cursor: pointer;
   padding: 10px 32px 10px 32px;
   border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(33, 150, 243, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -280,6 +280,7 @@ button {
   padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-portfolio:hover,
@@ -290,15 +291,13 @@ button {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .border {
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services-list-title {
@@ -340,6 +339,7 @@ button {
 .services-list-portfolio:active {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services-wrap-details {
@@ -534,12 +534,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-colo);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link svg {
@@ -566,6 +566,7 @@ button {
   padding: 0px 32px;
   border: 1px solid var(--sprite-color);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link svg:hover,
@@ -573,7 +574,6 @@ button {
 .clients-link svg:active {
   color: var(--accent-colo);
   border-color: var(--accent-colo);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Footer */
@@ -610,18 +610,20 @@ button {
   font-style: normal;
 }
 
-.item {
+.footer-map {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--secondayr-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mailto,
 .footer-contact {
   color: #ffffff60;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social {
@@ -651,12 +653,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
   background: var(--accent-colo);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link svg {
@@ -744,4 +746,5 @@ button {
 
 .close-button:hover {
   background-color: var(--accent-colo);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
